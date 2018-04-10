@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_about_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_about_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_image.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_image.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_system.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_system.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_website_label_widget.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_website_label_widget.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Release_shared\qrc_PixQtLib.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Debug_shared\qrc_PixQtLib.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_about_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_EnvItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_ImagePix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Properties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqtlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="website_label_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="props_page_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="props_page_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_helpBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_helpViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_helpBrowser.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_helpViewer.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_helpBrowser.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_helpViewer.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_version_update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_version_update.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_version_update.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_CooMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Dbl2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Dbl3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_Int2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_PntMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqfe_data_utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqfe_compress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqfe_dft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqfe_file_utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqfe_user_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="props_page_compare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_compare.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_compare.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_StopWatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_page_options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_page_image_options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_image_opt_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_image_opt_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_image_opt_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pixq_PropertiesData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="props_page_cv_rectify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="props_page_pnt_rectify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_cv_rectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_pnt_rectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_cv_rectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_pnt_rectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pixq_EnvItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_ImagePix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_MatrixData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_MatrixLa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_MatrixStat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_MatrixUt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Properties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixqt_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixqtlib_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixqtlib_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorMapsDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_CooMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Dbl2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Dbl3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_Int2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_PntMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_StopWatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_page_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pixq_page_image_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PixQtLib.qrc">
+      <Filter>Resource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_image.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_system.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_about_dialog.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixqtlib.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_about_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="website_label_widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixqtlib_ext.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_image.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_system.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_helpBrowser.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_helpViewer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_version_update.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_compare.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_compare.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pixq_image_opt_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_pnt_rectify.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_pnt_rectify.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_cv_rectify.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="props_page_cv_rectify.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Files\msg_pixlib.xml">
+      <Filter>Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixQtLib.pro" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Moc">
+      <UniqueIdentifier>{c13e0426-1c2d-495d-97e0-70cbde9bfbb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{f287a93b-2f12-48f6-97d9-60706a5a82ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{cf529157-3372-41aa-bf12-eeccc148bd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{95317eb3-55ec-4d5f-82b3-5efecdfee6e3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d94cb02e-2c11-4311-b4bf-cff7cd219f7f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6df40c33-d214-407b-b0d4-a77efff25572}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+</Project>

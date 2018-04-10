@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="PixQtLib"
+	ProjectGUID="{41E3DA9F-7316-430F-BC98-F01C821B01AE}"
+	RootNamespace="PixQtLib"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+				CommandLine="&#x0D;&#x0A;"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+				CommandLine=""
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\qtmain&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtWebKit&quot;;&quot;$(QTDIR)\mkspecs\win32-msvc2008&quot;"
+				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL;QT_GUI_LIB;VATI_EXTENSIONS;_CRT_SECURE_NO_WARNINGS"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+				CommandLine=""
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmaind.lib QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtWebKitd4.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;$(QTDIR86)\lib&quot;"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\qtmain&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtWebKit&quot;;&quot;$(QTDIR)\mkspecs\win32-msvc2008&quot;"
+				PreprocessorDefinitions="WIN32;_WIN64;_DEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL;_CRT_SECURE_NO_WARNINGS"
+				MinimalRebuild="false"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmaind.lib QtGuid4.lib QtCored4.lib QtNetworkd4.lib QtWebKitd4.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories=".;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\qtmain&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtWebKit&quot;;&quot;$(QTDIR)\mkspecs\win32-msvc2008&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL;QT_GUI_LIB;VATI_EXTENSIONS"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmain.lib QtGui4.lib QtCore4.lib QtNetwork4.lib QtWebKit4.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;$(QTDIR86)\lib&quot;"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="3"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories=".;&quot;$(QTDIR)\include&quot;;&quot;$(QTDIR)\include\qtmain&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;$(QTDIR)\include\ActiveQt&quot;;&quot;$(QTDIR)\include\QtNetwork&quot;;&quot;$(QTDIR)\include\QtWebKit&quot;;&quot;$(QTDIR)\mkspecs\win32-msvc2008&quot;"
+				PreprocessorDefinitions="WIN32;_WIN64;NDEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmain.lib QtGui4.lib QtCore4.lib QtNetwork4.lib QtWebKit4.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\BibleAllBooks.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleAllShiori.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleBook.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleListVerse.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaAllList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaUnit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleOccasion.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanChapterUnit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanDay.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanUnit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanYear.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanYearPlans.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleSetVerses.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleShiori.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleVerse.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_about_dialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_dictionary.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_EnvItem.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_ImagePix.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Matrix.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_options.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_options_page.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Properties.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Version.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_word.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqf_bagster_utility.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqf_data_utility.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqf_dft.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqf_file_utility.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqf_user_interface.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqtlib.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\property_page.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_timer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_view.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bagster.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bible.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_edit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_view.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_image.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_playback.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_system.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\sample_color_widget.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\website_label_widget.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\BibleAllBooks.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleAllShiori.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleBook.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleListVerse.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaAllList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleMikotobaUnit.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleOccasion.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanChapterUnit.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanDay.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanUnit.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BiblePlanYear.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleSetVerses.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleShiori.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BibleVerse.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_about_dialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\pixq_dictionary.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_EnvItem.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_ImagePix.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Matrix.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_MatrixData.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_MatrixLa.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_MatrixStat.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_MatrixUt.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_options.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputName).h;$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_WEBKIT_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtWebKit&quot; -I&quot;$(QTDIR)\include\QtNetwork&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\pixq_options_page.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Properties.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_Version.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixq_word.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqt_common.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqtlib.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=""
+						CommandLine=""
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\pixqtlib_def.h"
+				>
+			</File>
+			<File
+				RelativePath=".\pixqtlib_ext.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=""
+						CommandLine=""
+						AdditionalDependencies=""
+						Outputs=""
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\pixqtlib_global.h"
+				>
+			</File>
+			<File
+				RelativePath=".\property_page.h"
+				>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_timer.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_view.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bagster.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bible.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_edit.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_view.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_image.h"
+				>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_playback.h"
+				>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_system.h"
+				>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\$(ConfigurationName)_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName) -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\sample_color_widget.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\website_label_widget.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I&quot;tmp\moc\debug_shared&quot; -I$(QTDIR)\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 $(InputFileName)  -o tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(InputFileName);$(InputName).cpp"
+						Outputs="tmp\moc\$(ConfigurationName)_shared\moc_$(InputName).cpp"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath=".\PixQtLib.qrc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\rcc.exe -name $(InputName) $(InputFileName) -o tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\rcc.exe;$(InputFileName) "
+						Outputs="tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName) .cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\rcc.exe -name $(InputName) $(InputFileName) -o tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\rcc.exe;$(InputFileName) "
+						Outputs="tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName) .cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\rcc.exe -name $(InputName) $(InputFileName) -o tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\rcc.exe;$(InputFileName) "
+						Outputs="tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName) .cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC $(InputFileName) "
+						CommandLine="$(QTDIR)\bin\rcc.exe -name $(InputName) $(InputFileName) -o tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName).cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\rcc.exe;$(InputFileName) "
+						Outputs="tmp\rcc\$(ConfigurationName)_shared\qrc_$(InputName) .cpp"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			>
+			<File
+				RelativePath=".\pixq_about_dialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_timer.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_bagster_view.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bagster.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_bible.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_edit.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_hikari_view.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_image.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_playback.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\props_page_system.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC $(InputName).ui"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputFileName) -o ui_$(InputName).h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;$(InputFileName)"
+						Outputs="ui_$(InputName).h"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			>
+			<Filter
+				Name="debug"
+				>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_pixq_about_dialog.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_pixq_options.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_bagster_timer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_bagster_view.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_hikari_bagster.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_hikari_bible.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_hikari_edit.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_hikari_view.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_image.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_playback.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_props_page_system.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_sample_color_widget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Debug_shared\moc_website_label_widget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\rcc\Debug_shared\qrc_PixQtLib.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="release"
+				>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_pixq_about_dialog.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_pixq_options.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_bagster_timer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_bagster_view.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_hikari_bagster.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_hikari_bible.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_hikari_edit.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_hikari_view.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_image.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_playback.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_props_page_system.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_sample_color_widget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\moc\Release_shared\moc_website_label_widget.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\tmp\rcc\Release_shared\qrc_PixQtLib.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Files"
+			>
+			<File
+				RelativePath=".\Files\msg_pixlib.xml"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\PixQtLib.pro"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

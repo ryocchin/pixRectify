@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pixtopo version="1.0" data="message">
+
+  <!-- Properties  -->
+
+  <Class ID="PropTabs">
+    <Label ID="Compare" Jp="画像の比較" En="Comparison"/>
+    <Label ID="System" Jp="システム" En="System"/>
+    <Label ID="Image" Jp="画像" En="Image"/>
+    <Label ID="RectPoints" Jp="ステレオ補正[基準点]" En="Rectify Points"/>
+    <Label ID="RectCompute" Jp="ステレオ補正[計算]" En="Rectify Computation"/>
+  </Class>
+
+  <Class ID="PropCompare">
+    <Label ID="Draw" Jp="ワイパー/スコープ" En="Wiper / Scope"/>
+    <Label ID="Yes" Jp="線を表示" En="Draw Line"/>
+    <Label ID="Color" Jp="線の色" En="Line Color"/>
+    <Label ID="Fixed" Jp="線の色（固定）" En="Fixed Color"/>
+    <Label ID="Radius" Jp="スコープの半径" En="Scope Radius"/>
+  </Class>
+
+  <Class ID="PropImage">
+    <Label ID="Resampling" Jp="テクスチャー補間" En="Resampling"/>
+    <Label ID="Nearest" Jp="最近隣法" En="Nearest"/>
+    <Label ID="Bilinear" Jp="双線形補間" En="Bilinear"/>
+    <Label ID="Interval" Jp="サンプリング間隔" En="Stat. Interval"/>
+  </Class>
+
+  <Class ID="PropCvRectify">
+    <Label ID="Rotation" Jp="回転行列" En="Rotation Matrix"/>
+    <Label ID="Method" Jp="計算方法" En="Algorithms"/>
+    <Label ID="Method_7" Jp="7点" En="7-point"/>
+    <Label ID="Method_8" Jp="8点" En="8-point"/>
+    <Label ID="Method_RANSAC" Jp="RANSAC" En="RANSAC"/>
+    <Label ID="Method_LMEDS" Jp="LMedS" En="LMedS"/>
+    <Label ID="Distance" Jp="最大距離(RANSAC)" En="Max Distance(RANSAC)"/>
+    <Label ID="Limit" Jp="信頼度限界(RANSAC)" En="Confidence Limit(RANSAC)"/>
+    <Label ID="Disparity" Jp="縦視差（残差）閾値" En="Disparity Threshold"/>
+    <Label ID="Limit" Jp="信頼度限界(RANSAC)" En="Confidence Limit(RANSAC)"/>
+    <Label ID="Files" Jp="ファイル" En="Files"/>
+    <Label ID="Suffix" Jp="ファイル名接尾語" En="Image File Suffix"/>
+  </Class>
+
+  <Class ID="PropPntRectify">
+    <Label ID="Points" Jp="基準点" En="Control Points"/>
+    <Label ID="Number" Jp="理想点数" En="Ideal Points Number"/>
+    <Label ID="Exclude" Jp="縁辺から無視する部分" En="Exclude from Edge"/>
+    <Label ID="ExcludeTip" Jp="画像幅のパーセント" En="%-age to Image Width"/>
+    <Label ID="Feature" Jp="特徴点" En="Stereo Feature"/>
+    <Label ID="Before" Jp="基準点の探索前に..." En="Before Matching..."/>
+    <Label ID="Snap" Jp="近くの特徴点を探索" En="Snap to Feature Point"/>
+    <Label ID="Search" Jp="探索範囲(画素)" En="Search Range(Pixels)"/>
+    <Label ID="Matching" Jp="ステレオ・マッチング" En="Matching Conditions"/>
+    <Label ID="Pyramid" Jp="画像ピラミッド" En="Image Pyramid"/>
+    <Label ID="Use" Jp="使用" En="Use"/>
+    <Label ID="Mado" Jp="相関窓半径(画素)" En="Corr. Window Radius"/>
+    <Label ID="Stdev" Jp="標準偏差の閾値" En="Min Standard Deviation"/>
+    <Label ID="Gray" Jp="グレースケール画像" En="Grayscale Image"/>
+    <Label ID="GraCheck" Jp="使用" En="Used"/>
+    <Label ID="High" Jp="相関係数閾値(0.0-1.0)" En="Correlation Threshold(0-1)"/>
+    <Label ID="Horizontak" Jp="探索範囲（水平）" En="Max Disparity: Horizontal"/>
+    <Label ID="Vertical" Jp="探索範囲（垂直）" En="Max Disparity: Vertical"/>
+  </Class>
+  
+  <Class ID="PropSystem">
+    <Label ID="Language" Jp="言語(Language)" En="Language"/>
+    <Label ID="English" Jp="英語(English)" En="English"/>
+    <Label ID="Japanese" Jp="日本語(Japanese)" En="Japanese"/>
+    <Label ID="Fullscreen" Jp="フルスクリーン表示" En="Fullscreen"/>
+    <Label ID="Left" Jp="左" En="Left"/>
+    <Label ID="Right" Jp="右" En="Right"/>
+  </Class>
+  
+  <!-- 画面 -->
+
+  <Class ID="Gamen">
+    <Label ID="WinVersion" Jp="バージョン"/>
+    <Label ID="Processor" Jp="プロセッサ"/>
+    <Label ID="Architecture" Jp="アーキテクチャ"/>
+    <Label ID="AdbInstalled" Jp="このコンピューターには、Access Database Engineが既にインストールされています"/>
+    <Label ID="AdbNotInstalled" Jp="このコンピューターには、Access Database Engineがインストールされていません"/>
+    <Label ID="AdbtInstall" Jp="必要な場合はMicrosoftのダウンロード･センターより、入手できます[無料]"/>
+    <Label ID="AdbtNowInstall" Jp="インストールの手順ヘルプ画面のは&quot;インポート&quot;の項を御参照ください"/>
+  </Class>
+
+  <!-- システム･アップデート -->
+
+  <Class ID="Update">
+    <Label ID="ErrConnect" Jp="エラー! 最新バージョンの情報に接続できませんでした:"/>
+    <Label ID="ErrRead" Jp="エラー! 最新バージョンの情報の読み取りに失敗しました:"/>
+    <Label ID="ErrWrite" Jp="エラー! 最新バージョンの情報の書き込みに失敗しました:"/>
+    <Label ID="ErrRemove" Jp="エラー! 最新バージョンのファイル削除に失敗しました:"/>
+    <Label ID="HaveLatest" Jp="あなたは最新のプログラムを使っています"/>
+    <Label ID="GetLatest" Jp="最新バージョンが公開されています"/>
+    <Label ID="LatestVer" Jp="最新バージョン: "/>
+    <Label ID="UsedVer" Jp="使用中のバージョン: "/>
+    <Label ID="CanGetFromSite" Jp="PixTOPOのウェブサイトより最新版を入手できます"/>
+  </Class>
+  
+  <!-- 共通 -->
+  
+  <Class ID="Control">
+      <Label ID="Default" Jp="デフォルト" En="Default"/>
+    <Label ID="Cancel" Jp="キャンセル" En="Cancel"/>
+    <Label ID="Menu" Jp="メニュー" En="Menu"/>
+    <Label ID="Close" Jp="閉じる" En="Close"/>
+    <Label ID="Help" Jp="PixTOPO ヘルプ" En="Help"/>
+    <Label ID="Gothic" Jp="ＭＳ Ｐゴシック" En="ＭＳ Ｐゴシック"/>
+    <Label ID="Separater" Jp=" ■ " En=" | "/>
+  </Class>
+  
+  <!-- 環境設定パネル -->
+  
+  <Class ID="Option">
+      <!-- ヘッダー -->
+    <Label ID="Bagster" Jp="Bagster's Daily Light - 環境設定" En="Bagster's Daily Light - Options"/>
+    <Label ID="Hikari" Jp="Hikari - 環境設定" En="Hikari - Options"/>
+    <Label ID="Scope" Jp="Scope - 環境設定" En="Scope - Options"/>
+    <Label ID="Rectify" Jp="Rectify - 環境設定" En="Rectify - Options"/>
+    <Label ID="Wasabi" Jp="Wasabi - 環境設定" En="Wasabi - Options"/>
+    <Label ID="Sampler" Jp="Sampler - 環境設定" En="Sampler - Options"/>
+  </Class>
+  
+  
+</pixtopo>

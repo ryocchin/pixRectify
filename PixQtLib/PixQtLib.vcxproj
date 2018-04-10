@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41E3DA9F-7316-430F-BC98-F01C821B01AE}</ProjectGuid>
+    <RootNamespace>PixQtLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\obj\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;$(QTDIR32)\include;$(QTDIR32)\include\QtCore;$(QTDIR32)\include\QtGui;$(QTDIR32)\include\QtNetwork;$(QTDIR32)\include\ActiveQt;$(QTDIR32)\include\QtWidgets;$(QTDIR32)\include\QtHelp;$(QTDIR32)\include\QtSql</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_CORE_LIB;QT_GUI_LIB;QT_DLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command />
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>Qt5Guid.lib;Qt5Cored.lib;Qt5Helpd.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR32)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtSql</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN64;_DEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_CORE_LIB;QT_DLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Guid.lib;Qt5Cored.lib;Qt5Helpd.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;$(QTDIR32)\include;$(QTDIR32)\include\QtCore;$(QTDIR32)\include\QtGui;$(QTDIR32)\include\QtNetwork;$(QTDIR32)\include\ActiveQt;$(QTDIR32)\include\QtWidgets;$(QTDIR32)\include\QtHelp;$(QTDIR32)\include\QtSql</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_CORE_LIB;QT_DLL;QT_GUI_LIB;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Gui.lib;Qt5Core.lib;Qt5Help.lib;Qt5Widgets.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR32)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtSql</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN64;NDEBUG;_WINDOWS;_USRDLL;PIXQTLIB_EXPORTS;QT_CORE_LIB;QT_DLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Gui.lib;Qt5Core.lib;Qt5Help.lib;Qt5Widgets.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="pixq_page_image_options.cpp" />
+    <ClCompile Include="pixq_PropertiesData.cpp" />
+    <ClCompile Include="pixq_StopWatch.cpp" />
+    <ClCompile Include="pixq_CooMatrix.cpp" />
+    <ClCompile Include="pixq_Dbl2D.cpp" />
+    <ClCompile Include="pixq_Dbl3D.cpp" />
+    <ClCompile Include="pixq_helpBrowser.cpp" />
+    <ClCompile Include="pixq_helpViewer.cpp" />
+    <ClCompile Include="pixqfe_compress.cpp" />
+    <ClCompile Include="pixq_about_dialog.cpp" />
+    <ClCompile Include="pixq_EnvItem.cpp" />
+    <ClCompile Include="pixq_ImagePix.cpp" />
+    <ClCompile Include="pixq_Int2D.cpp" />
+    <ClCompile Include="pixq_Matrix.cpp" />
+    <ClCompile Include="pixq_image_opt_dialog.cpp" />
+    <ClCompile Include="pixq_page_options.cpp" />
+    <ClCompile Include="pixq_PntMatrix.cpp" />
+    <ClCompile Include="pixq_Properties.cpp" />
+    <ClCompile Include="pixq_Version.cpp" />
+    <ClCompile Include="pixq_version_update.cpp" />
+    <ClCompile Include="pixqfe_data_utility.cpp" />
+    <ClCompile Include="pixqfe_dft.cpp" />
+    <ClCompile Include="pixqfe_file_utility.cpp" />
+    <ClCompile Include="pixqfe_user_interface.cpp" />
+    <ClCompile Include="pixqtlib.cpp" />
+    <ClCompile Include="props_page_cv_rectify.cpp" />
+    <ClCompile Include="props_page_image.cpp" />
+    <ClCompile Include="props_page_compare.cpp" />
+    <ClCompile Include="props_page_system.cpp" />
+    <ClCompile Include="props_page_pnt_rectify.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_helpBrowser.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_helpViewer.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_image_opt_dialog.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_version_update.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_compare.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_cv_rectify.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_pnt_rectify.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_helpBrowser.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_helpViewer.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_image_opt_dialog.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_version_update.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_compare.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_cv_rectify.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_pnt_rectify.cpp" />
+    <ClCompile Include="website_label_widget.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_pixq_about_dialog.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_image.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_props_page_system.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_website_label_widget.cpp" />
+    <ClCompile Include="tmp\rcc\Debug_shared\qrc_PixQtLib.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_pixq_about_dialog.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_image.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_props_page_system.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_website_label_widget.cpp" />
+    <ClCompile Include="tmp\rcc\Release_shared\qrc_PixQtLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pixq_page_image_options.h" />
+    <CustomBuild Include="props_page_cv_rectify.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="props_page_pnt_rectify.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="pixq_about_dialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="pixq_helpBrowser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="pixq_helpViewer.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <ClInclude Include="ColorMapsDef.h" />
+    <ClInclude Include="pixq_StopWatch.h" />
+    <ClInclude Include="pixq_CooMatrix.h" />
+    <ClInclude Include="pixq_Dbl2D.h" />
+    <ClInclude Include="pixq_Dbl3D.h" />
+    <ClInclude Include="pixq_EnvItem.h" />
+    <ClInclude Include="pixq_ImagePix.h" />
+    <ClInclude Include="pixq_Int2D.h" />
+    <ClInclude Include="pixq_Matrix.h" />
+    <ClInclude Include="pixq_MatrixData.h" />
+    <ClInclude Include="pixq_MatrixLa.h" />
+    <ClInclude Include="pixq_MatrixStat.h" />
+    <ClInclude Include="pixq_MatrixUt.h" />
+    <CustomBuild Include="pixq_image_opt_dialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename).h;%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_WEBKIT_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtWebKit" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include" -I"$(QTDIR)\include\ActiveQt" -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="pixq_page_options.h" />
+    <ClInclude Include="pixq_PntMatrix.h" />
+    <ClInclude Include="pixq_Properties.h" />
+    <ClInclude Include="pixq_Version.h" />
+    <CustomBuild Include="pixq_version_update.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt  -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <ClInclude Include="pixqt_common.h" />
+    <CustomBuild Include="pixqtlib.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="pixqtlib_def.h" />
+    <CustomBuild Include="pixqtlib_ext.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="pixqtlib_global.h" />
+    <CustomBuild Include="props_page_image.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="props_page_compare.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="props_page_system.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="website_label_widget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012 -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PixQtLib.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\rcc.exe;%(Filename)%(Extension);Files/msg_bible.xml</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)%(Extension)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC %(Filename)%(Extension) ....</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)%(Extension)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)%(Extension)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="pixq_about_dialog.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">echo $(QTDIR)
+$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+    <CustomBuild Include="props_page_image.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="props_page_compare.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="props_page_system.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="PixQtLib.pro" />
+    <CustomBuild Include="props_page_pnt_rectify.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="props_page_cv_rectify.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).%(Extension)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Files\msg_pixlib.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

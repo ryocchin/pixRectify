@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/bible2.png</file>
+        <file>images/ehagaki2x.png</file>
+        <file>images/ehagaki2_bagster.png</file>
+        <file>images/ehagaki2x_options.png</file>
+        <file>Files/msg_pixlib.xml</file>
+        <file>images/hikari_props.png</file>
+        <file>images/help-browser.png</file>
+        <file>images/about_bible.bmp</file>
+        <file>images/about_default.bmp</file>
+        <file>images/about_image.bmp</file>
+        <file>images/info.png</file>
+    </qresource>
+</RCC>
+

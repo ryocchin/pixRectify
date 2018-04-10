@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>props_page_hikari_bible</class>
+ <widget class="QWidget" name="props_page_hikari_bible">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>ＭＳ Ｐゴシック</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="locale">
+   <locale language="Japanese" country="Japan"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="bible_original_group_box">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>聖書</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_kougo_radio">
+        <property name="text">
+         <string>口語訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_shinkai2_radio">
+        <property name="text">
+         <string>新改訳2版</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_shinkai3_radio">
+        <property name="text">
+         <string>新改訳3版</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_kyoudou_radio">
+        <property name="text">
+         <string>新共同訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_bungo_radio">
+        <property name="text">
+         <string>明治･大正訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_raguet_radio">
+        <property name="text">
+         <string>ラゲ訳[新約]</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_tsukamoto_radio">
+        <property name="text">
+         <string>塚本訳[新約]</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_kjv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>KJV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_akjv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>AKJV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_version_isv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>International Standard Version</string>
+        </property>
+        <property name="text">
+         <string>ISV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_1st_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+     <zorder>hikari_version_kougo_radio</zorder>
+     <zorder>hikari_version_shinkai2_radio</zorder>
+     <zorder>hikari_version_bungo_radio</zorder>
+     <zorder>hikari_version_raguet_radio</zorder>
+     <zorder>hikari_version_tsukamoto_radio</zorder>
+     <zorder>line</zorder>
+     <zorder>hikari_version_kjv_radio</zorder>
+     <zorder>hikari_version_isv_radio</zorder>
+     <zorder>hikari_version_shinkai3_radio</zorder>
+     <zorder>hikari_version_kyoudou_radio</zorder>
+     <zorder>hikari_version_akjv_radio</zorder>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="bible_2nd_group_box">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>聖書[比較]</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_kougo_radio">
+        <property name="text">
+         <string>口語訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_shinkai2_radio">
+        <property name="text">
+         <string>新改訳2版</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_shinkai3_radio">
+        <property name="text">
+         <string>新改訳3版</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_kyoudou_radio">
+        <property name="text">
+         <string>新共同訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_bungo_radio">
+        <property name="text">
+         <string>明治･大正訳</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_raguet_radio">
+        <property name="text">
+         <string>ラゲ訳[新約]</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_tsukamoto_radio">
+        <property name="text">
+         <string>塚本訳[新約]</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_kjv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>KJV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_akjv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>AKJV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="hikari_2nd_version_isv_radio">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>International Standard Version</string>
+        </property>
+        <property name="text">
+         <string>ISV</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">button_group_2nd_bible_version</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="bible_2nd_group_box_2">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>語句検索</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="search_kougo_check">
+        <property name="text">
+         <string>口語訳</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_shinkai2_check">
+        <property name="text">
+         <string>新改訳2版</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_shinkai3_check">
+        <property name="text">
+         <string>新改訳3版</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_kyoudou_check">
+        <property name="text">
+         <string>新共同訳</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_bungo_check">
+        <property name="text">
+         <string>明治･大正訳</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_raguet_check">
+        <property name="text">
+         <string>ラゲ訳[新約]</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_tsukamoto_check">
+        <property name="text">
+         <string>塚本訳[新約]</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_kjv_check">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>KJV</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_akjv_check">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>King James Version[欽定訳]</string>
+        </property>
+        <property name="text">
+         <string>AKJV</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="search_isv_check">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>International Standard Version</string>
+        </property>
+        <property name="text">
+         <string>ISV</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+ <buttongroups>
+  <buttongroup name="button_group_1st_bible_version"/>
+  <buttongroup name="button_group_2nd_bible_version"/>
+ </buttongroups>
+</ui>
