@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="tmp\moc\Release_shared\moc_sequence_select_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_sequence_select_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_DepthTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_DualTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_FlipPara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_FrameImageStat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageDualSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageSingleSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImgSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_PanePara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_PaneTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_TextureBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="piximglib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ScreenPara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_gl_utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_image_gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_image_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_image_match.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_image_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixqf_magick_utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sequence_select_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Release_shared\qrc_PixImgLib.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Debug_shared\qrc_PixImgLib.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageOpProjective.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageOpGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_ImageAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_FringesTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pix_FringeTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Print3DDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pix_DepthTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_DualTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_FlipPara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_FrameImageStat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageDualSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageSingleSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImgSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_PanePara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_PaneTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ScreenPara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_TextureBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piximg_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piximglib_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piximglib_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageOpProjective.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageOpGray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_ImageAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_FringeTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pix_FringesTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PixImgLib.qrc">
+      <Filter>Resource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="piximglib.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="piximglib_ext.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sequence_select_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sequence_select_dialog.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixImgLib.pro" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Moc">
+      <UniqueIdentifier>{98f79d4d-575c-42a2-b2e4-bc121b6c2a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{adda6bb8-9796-400b-bc7e-bb455ccbae2b}</UniqueIdentifier>
+      <Extensions>qrc</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{32e34d36-fd4c-4368-acff-1fe480d4b6ce}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{39a75d2a-2001-4da4-8331-8675f9dd1013}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{1b5c22bf-4ee7-450f-9146-12de19e4bc19}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{b8f12116-55ff-4af7-b2b3-eec91fb7e0cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Files\msg_imglib.xml">
+      <Filter>Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

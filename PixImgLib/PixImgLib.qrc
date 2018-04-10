@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/ehagaki2_bagster.png</file>
+        <file>images/ehagaki2x.png</file>
+        <file>Files/msg_imglib.xml</file>
+    </qresource>
+</RCC>

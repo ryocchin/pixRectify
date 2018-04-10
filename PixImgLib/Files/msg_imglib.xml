@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pixtopo version="1.0" data="message">  
+  
+    <!-- 共通 -->
+  
+    <Class ID="ImageCommon">
+      <!-- Color -->      
+      <Label ID="Red" Jp="赤" En="Red"/>
+      <Label ID="Green" Jp="緑" En="Green"/>
+      <Label ID="Blue" Jp="青" En="Blue"/>
+    
+      <!-- Orientation -->      
+      <Label ID="Red" Jp="赤" En="Red"/>
+      <Label ID="TopLeft" Jp="上左" En="Top Left"/>  
+      <Label ID="TopRight" Jp="上右" En="Top Right"/>
+      <Label ID="BottomRight" Jp="下右" En="Bottom Right"/>
+      <Label ID="BottomLeft" Jp="下左" En="Bottom Left"/>
+      <Label ID="LeftTop" Jp="左上" En="Left Top"/>
+      <Label ID="RightTop" Jp="右上" En="Right Top"/>
+      <Label ID="RightBottom" Jp="右下" En="Right Bottom"/>
+      <Label ID="LeftBottom" Jp="左下" En="Left Bottom"/>
+
+    </Class>
+        
+    <!-- 画像プロパティー -->
+  
+    <Class ID="ImageProp">
+      <!-- Common info -->
+      <Label ID="Undefined" Jp="未定義" En="Undefined"/>
+      <Label ID="Unknown" Jp="不明" En="Unknown"/>
+      <Label ID="Grayscale" Jp="グレースケール" En="Grayscale"/>
+      
+      <!-- file info -->
+      <Label ID="File" Jp="ファイル" En="File"/>
+      <Label ID="FileName" Jp="ファイル名" En="File Name"/>
+      <Label ID="Format" Jp="フォーマット" En="Format"/>
+      <Label ID="FileSize" Jp="サイズ" En="File Size"/>
+
+      <Label ID="DateCreated" Jp="作成日時" En="Date Created"/>
+      <Label ID="DateModified" Jp="更新日時" En="Date Modified"/>
+      <Label ID="DateRead" Jp="閲覧日時" En="Date Read"/>
+      
+      <!-- image info -->
+      <Label ID="Image" Jp="画像" En="Image"/>
+      <Label ID="Desc" Jp="形式" En="Description"/>
+      <Label ID="Width" Jp="幅[画素]" En="Width"/>
+      <Label ID="Height" Jp="高さ[画素]" En="Height"/>
+      <Label ID="Depth" Jp="デプス" En="Depth"/>
+      <Label ID="ColorModel" Jp="色空間" En="Color Model"/>
+      <Label ID="Resolution" Jp="解像度" En="Resolution"/>
+      <Label ID="ResUnit" Jp="[単位]" En="Resolution Unit"/>
+      <Label ID="Compression" Jp="圧縮" En="Compression"/>
+      <Label ID="Orientation" Jp="起点" En="Orientation"/>
+
+      <!-- image statitics -->
+      <Label ID="Minimum" Jp="最小値" En="Minimum"/>
+      <Label ID="Maximum" Jp="最大値" En="Maximum"/>
+      <Label ID="Average" Jp="平均値" En="Average"/>
+      <Label ID="StDev" Jp="標準偏差" En="Stndard Dev."/>
+      <Label ID="Variance" Jp="分散" En="Variance"/>
+      <Label ID="Kurtosis" Jp="尖度" En="Kurtosis"/>
+      <Label ID="Skewness" Jp="歪度" En="Skewness"/>
+      
+    </Class>
+  
+</pixtopo>

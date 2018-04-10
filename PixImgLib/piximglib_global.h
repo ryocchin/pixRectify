@@ -1,0 +1,7 @@
+#pragma once
+
+#ifdef PIXIMGLIB_EXPORTS
+#define PIXIMGLIB_EXPORT Q_DECL_EXPORT
+#else
+#define PIXIMGLIB_EXPORT Q_DECL_IMPORT
+#endif

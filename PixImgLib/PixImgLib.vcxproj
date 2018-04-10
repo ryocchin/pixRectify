@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89C7F769-DAB1-4FD6-B630-BDC01669300E}</ProjectGuid>
+    <RootNamespace>PixImgLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)PixQtLib;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(IMAGEMAGICKDIR)\ImageMagick\;$(IMAGEMAGICKDIR)\ImageMagick\Magick++\lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;PIXIMGLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL;QT_GUI_LIB;VATI_EXTENSIONS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command />
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>Qt5Guid.lib;Qt5Cored.lib;Qt5Networkd.lib;Qt5Widgetsd.lib;Qt5OpenGLd.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)PixQtLib\$(Platform)\$(Configuration);$(QTDIR)\lib;$(IMAGEMAGICKDIR)\VisualMagick\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)PixQtLib;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(IMAGEMAGICKDIR)\ImageMagick\;$(IMAGEMAGICKDIR)\ImageMagick\Magick++\lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN64;_DEBUG;_WINDOWS;_USRDLL;PIXIMGLIB_EXPORTS;QT_CORE_LIB;QT_DLL;_USE_IMAGE_MAGICK;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Widgetsd.lib;Qt5Guid.lib;Qt5Cored.lib;Qt5OpenGLd.lib;setupapi.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)PixQtLib\$(Platform)\$(Configuration);$(QTDIR)\lib;$(IMAGEMAGICKDIR)\VisualMagick\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)PixQtLib;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(IMAGEMAGICKDIR)\ImageMagick\;$(IMAGEMAGICKDIR)\ImageMagick\Magick++\lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PIXIMGLIB_EXPORTS;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_DLL;QT_GUI_LIB;VATI_EXTENSIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Gui.lib;Qt5Core.lib;Qt5Network.lib;Qt5OpenGL.lib;Qt5Widgets.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)PixQtLib\$(Platform)\$(Configuration);$(QTDIR)\lib;$(NVCUDASAMPLES_ROOT)/common/lib/$(Platform);$(IMAGEMAGICKDIR)\VisualMagick\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)PixQtLib;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWidgets;$(IMAGEMAGICKDIR)\ImageMagick\;$(IMAGEMAGICKDIR)\ImageMagick\Magick++\lib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN64;NDEBUG;_WINDOWS;_USRDLL;PIXIMGLIB_EXPORTS;QT_CORE_LIB;QT_DLL;_USE_IMAGE_MAGICK;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Widgets.lib;Qt5Gui.lib;Qt5Core.lib;Qt5OpenGL.lib;setupapi.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)PixQtLib\$(Platform)\$(Configuration);$(QTDIR)\lib;$(NVCUDASAMPLES_ROOT)/common/lib/$(Platform);$(IMAGEMAGICKDIR)\VisualMagick\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="pix_ImageAccess.cpp" />
+    <ClCompile Include="pix_ImageOpGray.cpp" />
+    <ClCompile Include="pix_ImageOpProjective.cpp" />
+    <ClCompile Include="pix_FringesTag.cpp" />
+    <ClCompile Include="pix_FringeTag.cpp" />
+    <ClCompile Include="pix_ImageInfo.cpp" />
+    <ClCompile Include="pix_ImageMatrix.cpp" />
+    <ClCompile Include="pix_DepthTexture.cpp" />
+    <ClCompile Include="pix_DualTexture.cpp" />
+    <ClCompile Include="pix_FlipPara.cpp" />
+    <ClCompile Include="pix_FrameImageStat.cpp" />
+    <ClCompile Include="pix_ImageDualSet.cpp" />
+    <ClCompile Include="pix_ImageOp.cpp" />
+    <ClCompile Include="pix_ImageSingleSet.cpp" />
+    <ClCompile Include="pix_ImgSequence.cpp" />
+    <ClCompile Include="pix_PanePara.cpp" />
+    <ClCompile Include="pix_PaneTexture.cpp" />
+    <ClCompile Include="pix_ScreenPara.cpp" />
+    <ClCompile Include="pix_TextureBuffer.cpp" />
+    <ClCompile Include="piximglib.cpp" />
+    <ClCompile Include="pixqf_gl_utility.cpp" />
+    <ClCompile Include="pixqf_image_gl.cpp" />
+    <ClCompile Include="pixqf_image_interface.cpp" />
+    <ClCompile Include="pixqf_image_match.cpp" />
+    <ClCompile Include="pixqf_image_ut.cpp" />
+    <ClCompile Include="pixqf_magick_utility.cpp" />
+    <ClCompile Include="Print3DDoc.cpp" />
+    <ClCompile Include="sequence_select_dialog.cpp" />
+    <ClCompile Include="tmp\moc\Debug_shared\moc_sequence_select_dialog.cpp" />
+    <ClCompile Include="tmp\rcc\Debug_shared\qrc_PixImgLib.cpp" />
+    <ClCompile Include="tmp\moc\Release_shared\moc_sequence_select_dialog.cpp" />
+    <ClCompile Include="tmp\rcc\Release_shared\qrc_PixImgLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pix_ImageAccess.h" />
+    <ClInclude Include="pix_ImageOpGray.h" />
+    <ClInclude Include="pix_ImageOpProjective.h" />
+    <ClInclude Include="pix_FringesTag.h" />
+    <ClInclude Include="pix_FringeTag.h" />
+    <ClInclude Include="pix_DepthTexture.h" />
+    <ClInclude Include="pix_DualTexture.h" />
+    <ClInclude Include="pix_FlipPara.h" />
+    <ClInclude Include="pix_FrameImageStat.h" />
+    <ClInclude Include="pix_ImageDualSet.h" />
+    <ClInclude Include="pix_ImageInfo.h" />
+    <ClInclude Include="pix_ImageMatrix.h" />
+    <ClInclude Include="pix_ImageOp.h" />
+    <ClInclude Include="pix_ImageSingleSet.h" />
+    <ClInclude Include="pix_ImgSequence.h" />
+    <ClInclude Include="pix_PanePara.h" />
+    <ClInclude Include="pix_PaneTexture.h" />
+    <ClInclude Include="pix_ScreenPara.h" />
+    <ClInclude Include="pix_TextureBuffer.h" />
+    <ClInclude Include="piximg_common.h" />
+    <CustomBuild Include="piximglib.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="piximglib_def.h" />
+    <CustomBuild Include="piximglib_ext.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="piximglib_global.h" />
+    <CustomBuild Include="sequence_select_dialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\debug_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DITFQTLIB_EXPORTS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL  -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include\QtOpenGL -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\debug_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension)  -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DQT_NO_DEBUG  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I$(QTDIR)\include\QtCore -I$(QTDIR)\include\QtGui -I$(QTDIR)\include -I$(QTDIR)\include\ActiveQt -I"tmp\moc\$(Configuration)_shared" -I$(QTDIR)\mkspecs\win32-msvc2012  -DWIN32 %(Filename)%(Extension) -o tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(Filename)%(Extension);%(Filename).cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\moc\$(Configuration)_shared\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PixImgLib.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\rcc.exe;%(Filename)%(Extension) ;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)%(Extension)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe;%(Filename)%(Extension) ;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC %(Filename)%(Extension) </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\rcc.exe -name %(Filename) %(Filename)%(Extension) -o tmp\rcc\$(Configuration)_shared\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)%(Extension)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tmp\rcc\$(Configuration)_shared\qrc_%(Filename) .cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="sequence_select_dialog.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).ui</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe %(Filename)%(Extension) -o ui_%(Filename).h
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="PixImgLib.pro" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Files\msg_imglib.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
