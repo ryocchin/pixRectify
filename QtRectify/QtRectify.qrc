@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/file_options.png</file>
+        <file>images/file_open_files.png</file>
+        <file>images/show_first.png</file>
+        <file>images/show_second.png</file>
+        <file>images/frame_refresh.png</file>
+        <file>images/zoom_down.png</file>
+        <file>images/zoom_recenter.png</file>
+        <file>images/zoom_up.png</file>
+        <file>images/zoom_real.png</file>
+        <file>images/rotate_color_mode.png</file>
+        <file>images/rotate_show_image.png</file>
+        <file>Files/msg_rectify.xml</file>
+        <file>Files/rectify_version.xml</file>
+        <file>images/show_wiper_hor.png</file>
+        <file>images/show_wiper_tags.png</file>
+        <file>images/file_save_files.png</file>
+        <file>images/file_save_anaglyph.png</file>
+        <file>images/cursor_hit_and_match.png</file>
+        <file>images/rectify1.png</file>
+    </qresource>
+</RCC>

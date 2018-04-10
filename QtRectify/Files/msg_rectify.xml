@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pixtopo version="1.0" data="message">  
+  
+    <!-- エラー、警告メッセージ -->
+  
+    <Class ID="Warning">
+      <Label ID="Seven" Jp="この計算方法には7点の基準点が必要です" En="You need Exactly seven points for this method." />
+      <Label ID="Eight" Jp="この計算方法には8点以上の基準点が必要です" En="You need right or more points for this method." />
+      <Label ID="DropWrong" Jp="二つの画像ファイルを選択してください" En="Select Two Images." />
+      <Label ID="SelectSecond" Jp="二つ目の画像をひとつ選択してください" En="Select Second Image." />
+      <Label ID="MoreThan2" Jp="3個以上の画像が選ばれました"  En="More than Two Images are Selected." />
+      <Label ID="NoEnoughPoint" Jp="十分な基準点が得られませんでした" En="There were not enough Control Points." />
+      <Label ID="NoRectif" Jp="ステレオ修正を実行できません"  En="Failed to Generate Rectified Images. Two Images" />
+      <Label ID="RectifyFail" Jp="カメラ・パラメーターの計算に失敗しました" En="Failed to compute Uncalibrated Stereo Camera." />
+      <Label ID="MatFail" Jp="基本行列の計算に失敗しました" En="Failed to Calculate the Fundamental Matrix." />
+      <Label ID="MethodFail" Jp="他の計算方法を試してください" En="Choose ANother computation Method." />
+    </Class>
+  
+  <!-- 画面 -->
+
+  <Class ID="View">
+    <Label ID="Index" Jp="インデックス画像" En="Index Image" />
+    <Label ID="Points" Jp="コントロール･ポイント" En="Control Points"/>
+  </Class>
+
+  <!-- 操作 -->
+  <Class ID="Operation">
+    <Label ID="Save" Jp="補正された右画像を保存" En="Select Rectified Right Image"/>
+    <Label ID="Anaglyph" Jp="アナグリフ画像を保存" En="Select Output Anaglyph Image"/>
+  </Class>
+  
+  <!-- コントロール･ポイント -->
+
+  <Class ID="Table">
+    <Label ID="Index" Jp="インデックス画像" En="Index Image" />
+    <Label ID="ID"          Jp="ID"            En="ID" />
+    <Label ID="Left X"      Jp="左X"           En="Left X"  />  
+    <Label ID="Left Y"      Jp="左Y"           En="Left Y"    />
+    <Label ID="Right X"     Jp="右X"           En="Right X"   />
+    <Label ID="Right Y"     Jp="右Y"           En="Right Y"   />
+    <Label ID="Stat"        Jp="評価"          En="Stat"      />
+    <Label ID="Used"        Jp="使用"          En="Used"      />
+    <Label ID="Corr"        Jp="相関"          En="Corr"      />
+    <Label ID="Outlier"     Jp="偏差"          En="Outlier"      />
+    <Label ID="Right.X"     Jp="右X（計算）"   En="Right X"   />
+    <Label ID="Right.Y"     Jp="右Y（計算）"   En="Right Y"   />
+    <Label ID="Disparity.X" Jp="視差X"        En="Disparity X" />
+    <Label ID="Disparity.Y" Jp="視差Y"        En="Disparity Y" />
+  </Class>                                  
+  
+  <!-- Menu -->
+
+  <Class ID="MenuFile">
+    <Label ID="Header" Jp="ファイル" En="File"/>
+    <Label ID="Image" Jp="ステレオ画像を選択" En="Select Stereo Images"/>
+    <Label ID="Save" Jp="補正された右画像をセーブ" En="Save Rectified Right Image"/>
+    <Label ID="Anaglyph" Jp="アナグリフ画像をセーブ" En="Save Anaglyph Image"/>
+    <Label ID="Horizontal" Jp="横並びステレオ画像をセーブ" En="Save Horizontal Stereo Image"/>
+    <Label ID="Option" Jp="オプション" En="Option"/>
+    <Label ID="Exit" Jp="終了" En="Exit"/>
+  </Class>
+
+  <Class ID="MenuView">
+    <Label ID="Header" Jp="表示" En="View"/>
+    <Label ID="Original" Jp="オリジナルの画像" En="Original Images"/>
+    <Label ID="Rectified" Jp="修正された画像" En="Rectified Images"/>
+  </Class>
+
+  <Class ID="MenuZoom">
+    <Label ID="Header" Jp="ズーム" En="Zoom"/>
+    <Label ID="Recenter" Jp="全体表示" En="Recenter"/>
+    <Label ID="Real" Jp="1:1" En="Real"/>
+    <Label ID="Zoom+" Jp="拡大" En="Zoom Up"/>
+    <Label ID="Zoom-" Jp="縮小" En="Zoom Down"/>
+    <Label ID="Up" Jp="上へ" En="Up"/>
+    <Label ID="Down" Jp="下へ" En="Down"/>
+    <Label ID="Left" Jp="左へ" En="Left"/>
+    <Label ID="Right" Jp="右へ" En="Right"/>
+    <Label ID="Fullscreen" Jp="フルスクリーン" En="Fullscreen"/>
+  </Class>
+
+  <Class ID="MenuRectify">
+    <Label ID="Header" Jp="ステレオ修正" En="Rectify"/>
+    <Label ID="All" Jp="ステレオ修正画像を生成" En="Stereo Rectification"/>
+    <Label ID="Points" Jp="コントロール･ポイント" En="Show Control Points"/>
+    <Label ID="Epipolar" Jp="水平線" En="Show Epipolar Line"/>
+    <Label ID="menuRectifyAnalyze" Jp="分析モード" En="Analyze Mode"/>
+    <Label ID="Control" Jp="[1]基準点を計測" En="[1] Measure Control Points"/>
+    <Label ID="Rectify" Jp="[2]修正画像を生成" En="[2] Create Rectified Images"/>
+    <Label ID="HitMatch" Jp="ポイント・マッチング（テスト）" En="Hit and Match (Test)"/>
+  </Class>
+
+  <Class ID="MenuControl">
+    <Label ID="Header" Jp="画面" En="Control"/>
+  </Class>
+
+    <Class ID="MenuHelp">
+      <Label ID="Header" Jp="ヘルプ" En="Help"/>
+      <Label ID="About" Jp="Rectifyについて..." En="About Rectify..."/>
+      <Label ID="Help" Jp="ヘルプ" En="Help"/>
+    </Class>
+
+</pixtopo>

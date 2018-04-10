@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="tmp\moc\debug_shared\moc_image_splitter.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_image_splitter.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="image_splitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\debug_shared\moc_rectify_dock.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_dock.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_pane.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\debug_shared\moc_rectify_pane.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_rectify_table.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_table.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\debug_shared\moc_rectify_window.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_window.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_tex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_pane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_pane_gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_pane_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_dock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Release_shared\qrc_QtRectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\rcc\Debug_shared\qrc_QtRectify.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_pane_tags.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_match.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_progress_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_rectify_progress_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_progress_dialog.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_anaglyph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_compute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_search_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Debug_shared\moc_rectify_search_thread.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\Release_shared\moc_rectify_search_thread.cpp">
+      <Filter>Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_rectify2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectify_window_rectify1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rectify_panes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rectify_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rectify_cv_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="image_splitter.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_window.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_pane.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_window.ui">
+      <Filter>Form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_dock.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtRectify.qrc">
+      <Filter>Resource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_table.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_progress_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_progress_dialog.ui">
+      <Filter>Form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rectify_search_thread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QtRectify.pro" />
+    <None Include="manual\pixrectify_style.css">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_help.bat">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_en_index.qhp">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_jp_index.qhp">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_en_index.qhcp">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_jp_index.qhcp">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_en_index.html">
+      <Filter>help</Filter>
+    </None>
+    <None Include="manual\pixrectify_jp_index.html">
+      <Filter>help</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Moc">
+      <UniqueIdentifier>{241af159-2526-406c-9634-676c4bfe3e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form">
+      <UniqueIdentifier>{fa266077-4584-4235-b9e8-21b455b9be93}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{a3037df1-1c5d-49a0-ab20-409d27289ded}</UniqueIdentifier>
+      <Extensions>qrc</Extensions>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{f79127e3-82cd-4673-91c3-5aa06606c1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{92f83245-15a4-4ac2-829d-6732fb69ac56}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{670d619e-d113-4156-92ac-1a10f3ecf698}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="help">
+      <UniqueIdentifier>{42b4bf1d-c9cb-47da-863b-25d8246cf339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Files\msg_rectify.xml">
+      <Filter>Files</Filter>
+    </Xml>
+    <Xml Include="Files\rectify_version.xml">
+      <Filter>Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="manual\about.txt">
+      <Filter>help</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

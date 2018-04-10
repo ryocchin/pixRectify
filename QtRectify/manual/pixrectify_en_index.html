@@ -1,0 +1,124 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<title>pixRectify - Uncalibrated Stereo Rectification</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<link href="pixrectify_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="cover">
+<p class="book_header"><a class="whitelinks" href="book_001_001.xhtml">pixRectify</a></p>
+<h2 class="chapter_top">Uncalibrated Stereo Rectification</h2>
+<p class="vs">一台のカメラを手で持ち、左右にずれながら2枚の写真を撮影しても、ステレオ・カメラで撮るような厳密なステレオ写真にはなりません。手振れがあり、レンズの光軸を平行に保つことができないからです。</p>
+
+<center>
+  <img class="photo2" src="./1224_left_whole.png" />
+  <img class="photo2" src="./1224_right_whole.png" />
+</center>
+
+<p class="vs">These two images may look life good stareo pairs which consist of two pictures taken with parallel light axis....</p>
+
+<center>
+  <img class="photo2" src="./1224_left_center.png" />
+<img class="photo2" src="./1224_right_center.png" />
+</center>
+
+<p class="vs">but, when it is enlarged, vertical disparity presents, 厳密なステレオ写真の条件を満たしていません。この状態では正常に立体視できず、3D表示に適していません。</p>
+
+<br/>
+<p class="vs">pixRectifyは、簡単な操作で、厳密なステレオ写真となるようにこのようなブレを補正します。</p>
+
+<h2 class="chapter_top">操作</h2>
+
+
+<p class="vsb">画像の読み込み</p>
+<p class="vs">メニューの『ファイル』から、『ステレオ画像の読み込み』を選び、撮影した左画像、ついで、右画像を選択します。画像が読み込まれ、全体が表示されます。</p>
+
+<center>
+<img class="photo2" align="center" src="./rectify01.png" />
+</center>
+
+<p class="vs_note">このソフトウェアをインストールしたディレクトリーの下のsample（通常はC:\Program Files\PixTOPO\pixRectify x64\sample）にこのテスト用のステレオ画像が入っています。</p>
+
+<br />
+<p class="vsb">ステレオ修正</p>
+<p class="vs">『ステレオ修正』から、『ステレオ修正画像を生成』を選択します。はじめに左右の画像上に対応点の探索が行われます。</p>
+
+<center>
+    <img class="photo2" align="center" src="./rectify03.png" />
+</center>
+
+<p class="vs">ステレオ修正が完了すると、画面の右側にはブレを修正し、厳密なステレオ補正が施された右画像が表示されます。</p>
+
+<center>
+  <img class="photo2" align="center" src="./rectify05.png" />
+</center>
+
+<p class="vsb">ステレオ補正の確認</p>
+<p class="vs">ステレオ補正が終了した後、メニューの『表示』から、『オリジナルの画像』、『修正された画像』を選ぶと、右側の表示が、ステレオ補正の前と後の画像に切り替わります。『水平線』を選ぶと、左右の画像の上に水平の線が引かれ、ステレオ補正が行われたことを確認できます。</p>
+
+<center>
+    <img class="photo2" align="center" src="./rectify07.png" />
+</center>
+
+<p class="vs">これは、ステレオ補正前の左右の画像（オリジナルの画像）です。水平線を描いてみると縦方向のずれがあったことが分かります。</p>
+
+<center>
+    <img class="photo2" align="center" src="./rectify08.png" />
+</center>
+
+<p class="vs">『修正された画像』を表示して、黄色い線の位置を見ると縦方向のずれが解消しています。これは、補正によって、ステレオ・カメラで撮影したものと同等のステレオ写真を生成した結果です。</p>
+<br />
+<p class="vsb">画像ファイルのセーブ</p>
+<p class="vs">『ファイル』から、『補正された右画像をセーブ』を選ぶと、ステレオ補正された右画像をファイルに出力します。</p>
+
+<center>
+    <img class="photo2" src="./1224_left_whole.png" />
+    <img class="photo2" src="./1224_right_rectified_whole.png" />
+</center>
+
+<p class="vs">右側カメラの光軸を回転した分だけ、画像の縁辺部に黒い枠ができています。</p>
+<br/>
+<p class="vs">また、『ファイル』から、『アナグリフ画像をセーブ』を選ぶと、ステレオ補正された左右の画像から生成したアナグリフ画像がセーブされます。</p>
+
+<center>
+    <img class="photo2" src="./1224_anaglyph.png" />
+</center>
+
+<h2 class="chapter_top">About pixDiff...</h2>
+
+<p class="vs"><span class="vn">pixRectify</span> is free software for Windows. This siftware can be distributed for free. THis software is to Pixel Topography Group. We are no resposbile for any damage or loss caused by using this software.</p>
+<br/>
+<p class="vs">本ソフトウェアを使用したことによって生じたいかなる損害についても作者は責任を負わないものとします。</p>
+  <br/>
+  <br/>
+<p class="vs">Developed by: <a href="http://pixtopo.zashiki.com/">Pixel  Topography Group</a></p>
+<p class="vs">Contact：pixtopo@gmail.com</p>
+<br/>
+    
+<p class="vs">Acknowledgement:</p>
+
+<ul>
+    <li> 
+      <p class="vs">Magick++ 6.9 - ImageMagickE Software Developpers' library[<a href="http://www.imagemagick.org/" target="_blank">ImageMagick  Studio LLC]</a></p>
+    </li>
+</ul>
+
+<ul>
+    <li> 
+      <p class="vs">OpenCV 2.4 - Computer Vision[<a href="https://opencv.org/" target="_blank">OpenCV Library]</a></p>
+    </li>
+</ul>
+
+<ul>
+<li> 
+      <p class="vs">Qt 5.7[<a href="http://www.qt.io/" target="_blank">The Qt Company]</a></p>
+</li>
+</ul>
+
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pixtopo version="1.0" data="latest">
+    
+      <!-- 基本情報 -->
+      <!-- バージョン -->
+      <!-- リリース日 -->
+      <!-- コンタクト先 -->
+
+  <!-- モジュール "image", "bible" -->
+  <!-- プラットフォーム "x86" or "x64" or "Android" -->
+             
+    <Version
+      company="pixTOPO" 
+      product="Image Stereo Rectification Tools"
+      application="pixRectify"
+      jp_description="厳密ステレオ補正"
+      en_description="Strict Stereo Image Recitfication"
+      module="image"
+      platform="x64"
+      
+      major="1"
+      minor="3"
+      release="0"
+      
+      year="2018"
+      month="4" 
+      day="3"
+      
+      contact="pixtopo@gmail.com"
+      website="pixtopo.zashiki.com"
+      devblog="pixtopo.blogspot.ca"
+      />
+</pixtopo>

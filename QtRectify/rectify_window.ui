@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rectify_window</class>
+ <widget class="QMainWindow" name="rectify_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>メイリオ</family>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>pixPLOT - Rectification</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="QtRectify.qrc">
+    <normaloff>:/images/rectify1.png</normaloff>:/images/rectify1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>ＭＳ Ｐゴシック</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="viewToolBar">
+   <property name="font">
+    <font>
+     <family>ＭＳ Ｐゴシック</family>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>561</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_file_select_image_pair"/>
+    <addaction name="action_file_save_image_pair"/>
+    <addaction name="action_file_save_anaglyph"/>
+    <addaction name="separator"/>
+    <addaction name="action_file_properties"/>
+    <addaction name="action_file_exit"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="action_view_original_image"/>
+    <addaction name="action_view_rectified_images"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_help_help"/>
+    <addaction name="action_help_about"/>
+   </widget>
+   <widget class="QMenu" name="menuControl">
+    <property name="title">
+     <string>Control</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuZoom">
+    <property name="title">
+     <string>Zoom</string>
+    </property>
+    <addaction name="action_zoom_recneter"/>
+    <addaction name="action_zoom_real_size"/>
+    <addaction name="separator"/>
+    <addaction name="action_zoom_zoom_up"/>
+    <addaction name="action_zoom_zoom_down"/>
+    <addaction name="separator"/>
+    <addaction name="action_zoom_scroll_up"/>
+    <addaction name="action_zoom_scroll_down"/>
+    <addaction name="action_zoom_scroll_left"/>
+    <addaction name="action_zoom_scroll_right"/>
+   </widget>
+   <widget class="QMenu" name="menuRectify">
+    <property name="title">
+     <string>Rectify</string>
+    </property>
+    <widget class="QMenu" name="menuRectifyAnalyze">
+     <property name="title">
+      <string>Analyze</string>
+     </property>
+     <addaction name="action_rectify_generate_control_points"/>
+     <addaction name="action_rectify_stereo_rectification"/>
+     <addaction name="separator"/>
+     <addaction name="action_rectify_hit_and_match"/>
+    </widget>
+    <addaction name="action_rectify_all_rectification"/>
+    <addaction name="separator"/>
+    <addaction name="action_rectify_show_control_points"/>
+    <addaction name="action_rectify_horizontal_check_line"/>
+    <addaction name="menuRectifyAnalyze"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuZoom"/>
+   <addaction name="menuRectify"/>
+   <addaction name="menuControl"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="zoomFrameToolBar">
+   <property name="font">
+    <font>
+     <family>ＭＳ Ｐゴシック</family>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_file_properties">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/file_options.png</normaloff>:/images/file_options.png</iconset>
+   </property>
+   <property name="text">
+    <string>Properties</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+  <action name="action_file_exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_view_first_image">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_first.png</normaloff>:/images/show_first.png</iconset>
+   </property>
+   <property name="text">
+    <string>Left Image</string>
+   </property>
+   <property name="shortcut">
+    <string>F</string>
+   </property>
+  </action>
+  <action name="action_view_second_image">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_second.png</normaloff>:/images/show_second.png</iconset>
+   </property>
+   <property name="text">
+    <string>Right Image</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="action_help_about">
+   <property name="text">
+    <string>About pixRectify</string>
+   </property>
+  </action>
+  <action name="action_file_select_image_pair">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/file_open_files.png</normaloff>:/images/file_open_files.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select Images</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_zoom_real_size">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/zoom_real.png</normaloff>:/images/zoom_real.png</iconset>
+   </property>
+   <property name="text">
+    <string>Real Size</string>
+   </property>
+   <property name="shortcut">
+    <string>0</string>
+   </property>
+  </action>
+  <action name="action_zoom_recneter">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/zoom_recenter.png</normaloff>:/images/zoom_recenter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show the Whole Image</string>
+   </property>
+   <property name="shortcut">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="action_zoom_zoom_up">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/zoom_up.png</normaloff>:/images/zoom_up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom +</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="action_zoom_zoom_down">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/zoom_down.png</normaloff>:/images/zoom_down.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom -</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="action_zoom_scroll_up">
+   <property name="text">
+    <string>Above</string>
+   </property>
+   <property name="shortcut">
+    <string>8</string>
+   </property>
+  </action>
+  <action name="action_zoom_scroll_down">
+   <property name="text">
+    <string>Bottom</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action_zoom_scroll_left">
+   <property name="text">
+    <string>Left</string>
+   </property>
+   <property name="shortcut">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="action_zoom_scroll_right">
+   <property name="text">
+    <string>Right</string>
+   </property>
+   <property name="shortcut">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action_rectify_generate_control_points">
+   <property name="text">
+    <string>[1] Compute Rectification</string>
+   </property>
+  </action>
+  <action name="action_rectify_stereo_rectification">
+   <property name="text">
+    <string>[2] Stereo Rectification</string>
+   </property>
+  </action>
+  <action name="action_rectify_show_control_points">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_wiper_tags.png</normaloff>:/images/show_wiper_tags.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Control Points</string>
+   </property>
+  </action>
+  <action name="action_view_original_image">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_first.png</normaloff>:/images/show_first.png</iconset>
+   </property>
+   <property name="text">
+    <string>Original Images</string>
+   </property>
+  </action>
+  <action name="action_view_rectified_images">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_second.png</normaloff>:/images/show_second.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rectified Images</string>
+   </property>
+  </action>
+  <action name="action_rectify_horizontal_check_line">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/show_wiper_hor.png</normaloff>:/images/show_wiper_hor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Epipolar LIne</string>
+   </property>
+  </action>
+  <action name="action_file_save_image_pair">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/file_save_files.png</normaloff>:/images/file_save_files.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Rectified Right Image</string>
+   </property>
+  </action>
+  <action name="action_file_save_anaglyph">
+   <property name="icon">
+    <iconset resource="QtRectify.qrc">
+     <normaloff>:/images/file_save_anaglyph.png</normaloff>:/images/file_save_anaglyph.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create Anaglyph Image</string>
+   </property>
+  </action>
+  <action name="action_rectify_all_rectification">
+   <property name="text">
+    <string> Rectification</string>
+   </property>
+  </action>
+  <action name="action_rectify_hit_and_match">
+   <property name="text">
+    <string>Hit and Match</string>
+   </property>
+  </action>
+  <action name="action_help_help">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="QtRectify.qrc"/>
+ </resources>
+ <connections/>
+</ui>

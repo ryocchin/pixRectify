@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QHelpCollectionProject version="1.0">
+  <assistant>
+    <title>pixRectify - Unrectified Stereo Image Adjustment</title>
+    <applicationIcon>pixrectify_help.png</applicationIcon>
+    <cacheDirectory>PixTopo/pixRectify.1.0</cacheDirectory>
+    <startPage>qthelp://com.pixtopo.pixrectify/doc/pixrectify_en_index.html</startPage>
+    <aboutMenuText>
+      <text>About pixRectify...</text>
+    </aboutMenuText>
+    <aboutDialog>
+      <file>about.txt</file>
+      <icon>about_header.png</icon>
+    </aboutDialog>
+    <enableDocumentationManager>false</enableDocumentationManager>
+    <enableAddressBar>false</enableAddressBar>
+    <enableFilterFunctionality>false</enableFilterFunctionality>
+  </assistant>
+  <docFiles>
+    <generate>
+      <file>
+        <input>pixrectify_en_index.qhp</input>
+        <output>pixrectify_en_index.qch</output>
+      </file>
+    </generate>
+    <register>
+      <file>pixrectify_en_index.qch</file>
+    </register>
+  </docFiles>
+</QHelpCollectionProject>

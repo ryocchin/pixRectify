@@ -1,0 +1,348 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 4%;    
+    margin-right: 4%; 
+    height: 100%;
+    width: 800px;
+}
+
+
+
+hr  { 
+    border: 0; 
+    height: 4px; 
+   /*
+   * background-image: -webkit-linear-gradient(left, transparent, #8c8b8b,transparent);
+   *  background-image: -moz-linear-gradient(left, transparent, #8c8b8b, transparent);
+   *  background-image: -ms-linear-gradient(left, transparent, #8c8b8b, transparent);
+   *  background-image: -o-linear-gradient(left, transparent, #8c8b8b, transparent); 
+       */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+
+p.vs { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 16px;
+	text-align: left;
+    font-weight: normal;
+    color: #111111;
+    line-height: 24px;
+    margin: 0;
+}  
+
+p.vs_note { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 14px;
+	text-align: left;
+    font-weight: normal;
+    color: #555555;
+    line-height: 16px;
+    margin: 0;
+}  
+
+p.vsb { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 16px;
+	text-align: left;
+    font-weight: bold;
+    color: #111111;
+    line-height: 24px;
+    margin: 0;
+}  
+
+
+span.vn { 
+	font-family: "Arial";
+    color: #8888ff;
+	font-weight: bold;
+} 
+
+h2.chapter_top { 
+    font-family: "Meiryo",sans-serif;
+    color: #333333;
+	font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: left; 
+    width: 100%;
+    height: 26px;
+    background-color: #cccccc;
+	margin-left: 0px;    
+	margin-right: 0px;    
+    margin-top: 10px ;
+    margin-bottom: 10px;
+	padding-left: 10px;    
+	padding-right: 10px;    
+    padding-top: 1px ;
+    padding-bottom: 1px;
+	page-break-before: always;
+} 
+
+
+img.photo2 { 
+	margin-left: 5px;    
+	margin-right: 5px;    
+    margin-top: 25px ;
+    margin-bottom: 25px;
+	padding-left: 0px;    
+	padding-right: 0px;    
+    padding-top: 0px ;
+    padding-bottom: 0px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+** 黒箱の中のリンク（白文字）　
+*/ 
+a.blacklinks:link {
+	font-family: "Meiryo",sans-serif;
+	color: #ffffff;
+	cursor: crosshair;
+	text-decoration:none;
+}
+
+a.blacklinks:visited {
+	font-family: "Meiryo",sans-serif;
+	color: #ffffff;
+	cursor: crosshair;
+	text-decoration:none;
+}
+
+a.blacklinks:hover {
+	font-family: "Meiryo",sans-serif;
+	color: #8888ff;
+	cursor: crosshair;
+	text-decoration:none;
+}
+
+/*
+** 白地のリンク文字　
+*/   
+a.whitelinks:link {
+	font-family: "Meiryo",sans-serif;
+	color: #333333;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a.whitelinks:visited {
+	font-family: "Meiryo",sans-serif;
+	color: #883388;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a.whitelinks:hover {
+	font-family: "Meiryo",sans-serif;
+	color: #4444ff;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+/*
+** 各章のページ、右上の書名、リンク
+*/  
+ 
+h1.book_header { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1111ee;
+	line-height:48px;
+    text-align: right;
+} 
+
+p.book_header { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1111ee;
+	line-height:48px;
+    text-align: right;
+} 
+
+a.book_header:link {
+    font-family: "Meiryo",sans-serif;
+	color: #1111ee;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+    text-align: right;
+} 
+
+a.book_header:visited {
+    font-family: "Meiryo",sans-serif;
+	color: #1111ee;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+    text-align: right;
+}
+
+a.book_header:hover {
+    font-family: "Meiryo",sans-serif;
+	color: #4444ff;
+	cursor: crosshair;
+	text-decoration:none;
+	font-weight: bold;
+    text-align: right;
+}
+
+span.chapter { 
+    width: 200px;
+	font-weight: bold;
+    display: inline-block;
+    background-color: #aaaaaa;
+    color: #111111;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+p.verse_zero { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 14px;
+	text-align: left;
+    font-weight: normal;
+    color: #666666;
+    line-height: 20px;
+    margin: 0;
+}  
+
+
+
+p.chapter_top { 
+    font-family: "Meiryo",sans-serif;
+    color: #333333;
+	font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: left; 
+    width: 100%;
+    height: 26px;
+    background-color: #cccccc;
+	margin-left: 0px;    
+	margin-right: 0px;    
+    margin-top: 0px ;
+    margin-bottom: 2px;
+	padding-left: 1px;    
+	padding-right: 0px;    
+    padding-top: 1px ;
+    padding-bottom: 1px;
+} 
+
+
+p.biblecover_book { 
+    font-family: "Meiryo",sans-serif;
+    font-weight: bold;
+    color: #444444;
+    font-size: 24px;
+    line-height: 32px;
+	margin-left: 0px;    
+	margin-right: 0px;    
+    margin-top: 0px ;
+    margin-bottom: 2px;
+	padding-left: 1px;    
+	padding-right: 0px;    
+    padding-top: 1px ;
+    padding-bottom: 1px;
+} 
+
+
+
+p.books_list { 
+    font-family: "Meiryo",sans-serif;
+	font-weight: bold;
+    color: #666666;
+    line-height: 5px;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+span.books_list { 
+    font-family: "Meiryo",sans-serif;
+	font-weight: bold;
+    color: #111111;
+    line-height: 5px;
+    font-size: 25px;
+}
+
+
+
+span.chapters_list { 
+    font-family: "Meiryo",sans-serif;
+	font-weight: bold;
+    color: #111111;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+span.chapters_list_line { 
+    font-family: "Meiryo",sans-serif;
+	font-weight: normal;
+    color: #666666;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+div.first_middle {  
+    display: table-cell;   
+    vertical-align: middle;
+}  
+span.first_cover1 { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 56px;
+	font-weight: bold;
+    color: #222222;
+    text-align: center;
+}
+
+span.first_cover2 { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 20px;
+	font-weight: bold;
+    color: #666666;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 65px;
+}
+
+span.first_cover3 { 
+    font-family: "Meiryo",sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+    color: #222222;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 65px;
+}

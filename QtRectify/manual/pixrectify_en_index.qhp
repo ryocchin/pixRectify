@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>com.pixtopo.pixrectify</namespace>
+  <virtualFolder>doc</virtualFolder>
+  <filterSection>
+    <toc>
+      <section title="Usage" ref="pixrectify_en_index.html"> </section>
+    </toc>
+
+    <keywords>
+      <keyword name="Usage" id="pixRectify" ref="./pixrectify_en_index.html"/>
+    </keywords>
+
+    <files>
+      <file>pixrectify_en_index.html</file>
+      <file>pixrectify_style.css</file>
+
+      <file>1224_left_whole.png</file>
+      <file>1224_right_whole.png</file>
+      <file>1224_left_center.png</file>
+      <file>1224_right_center.png</file>
+      <file>rectify01.png</file>
+      <file>rectify03.png</file>
+      <file>rectify05.png</file>
+      <file>rectify07.png</file>
+      <file>rectify08.png</file>
+      <file>1224_left_whole.png</file>
+      <file>1224_right_rectified_whole.png</file>
+      <file>1224_anaglyph.png</file>
+
+    </files>
+  </filterSection>
+</QtHelpProject>
+

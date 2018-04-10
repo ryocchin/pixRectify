@@ -1,0 +1,9 @@
+﻿pixRectify、一台の手持ちカメラで作成したステレオ写真のずれを直し、ステレオ・カメラで撮影したのと同等のステレオ写真に補正します。
+Windows（x64）フリー･ソフトウェアです。
+
+動作環境
+Windows 7/8/10 x64
+
+作者: PixTOPO
+http://pixtopo.zashiki.com
+pixtopo@gmail.com

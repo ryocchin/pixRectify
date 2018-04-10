@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>pixRectify 厳密ステレオ補正</title>
+        <applicationIcon>pixrectify_help.png</applicationIcon>
+        <cacheDirectory>PixTopo/pixRectify.1.0</cacheDirectory>
+        <startPage>qthelp://com.pixtopo.pixrectify/doc/pixrectify_jp_index.html</startPage>
+        <aboutMenuText>
+            <text>『pixRectify』について</text>
+        </aboutMenuText>
+        <aboutDialog>
+            <file>about.txt</file>
+            <icon>about_header.png</icon>
+        </aboutDialog>
+        <enableDocumentationManager>false</enableDocumentationManager>
+        <enableAddressBar>false</enableAddressBar>
+        <enableFilterFunctionality>false</enableFilterFunctionality>
+    </assistant>
+    <docFiles>
+        <generate>
+            <file>
+                 <input>pixrectify_jp_index.qhp</input>
+                 <output>pixrectify_jp_index.qch</output>
+                </file> 
+            </generate>
+        <register>
+            <file>pixrectify_jp_index.qch</file>
+            </register>
+        </docFiles>
+    </QHelpCollectionProject>
